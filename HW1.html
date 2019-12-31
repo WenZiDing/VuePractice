@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<title>HW1</title>
+	</head>
+		<body>	
+			<div id="app">{{message}}
+				<div>輸入台幣： <input type="text" v-model="money"></div>
+				<div>美金={{money/29.58}}元</div>
+				<div>港幣={{money/3.693}}元</div>
+				<div>英鎊={{money/38.15}}元</div>
+				<div>日幣={{money/0.2667}}元</div>
+				<div>韓幣={{money/0.02422}}元</div>
+			</div>
+
+			<script src="script/vue.js"></script>
+			<script>	
+				var app = new Vue({
+					el:'#app',
+					data:{
+						money: 0
+					}
+				});
+			</script>
+		</body>
+</html>

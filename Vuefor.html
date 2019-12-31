@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<title>for1</title>
+	</head>
+		<body>	
+			<div id="app">{{message}}
+				<ul>
+					<li v-for ="item in colors">{{item}}</li>
+				</ul>
+
+				<ul>
+					<li v-for ="item in home">{{item.family}}</li>
+				</ul>
+
+
+			</div>
+
+			<script src="script/vue.js"></script>
+			<script>	
+				var app = new Vue({
+					el:'#app',
+					data:{
+						message: 'Hello Vue!',
+						colors: ['black','red','green'],
+						home: [{family:'Ireee'},{family:'Reeeeeex'}]
+					}
+				});
+			</script>
+		</body>
+</html>
